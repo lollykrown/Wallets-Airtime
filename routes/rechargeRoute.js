@@ -1,6 +1,5 @@
 const express = require('express');
 const rechargeRoute = express.Router();
-const request = require('request');
 const axios = require('axios');
 const debug = require('debug')('app:rechargeRoute');
 
