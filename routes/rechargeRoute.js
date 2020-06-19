@@ -104,16 +104,16 @@ function router() {
           response.push(resu.data)
         }
         debug(response)
-        noOfSuccessfulRecharges = 0
-        noOfFailedRecharges = 0
-        for(let i of response){
-          if(i.ResponseCode === '100'){
-            noOfSuccessfulRecharges += 1
-          }
-          if(i.ResponseCode !== '100'){
-            noOfFailedRecharges += 1
-          }
-        }
+        // noOfSuccessfulRecharges = 0
+        // noOfFailedRecharges = 0
+        // for(let i of response){
+        //   if(i.ResponseCode === '100'){
+        //     noOfSuccessfulRecharges += 1
+        //   }
+        //   if(i.ResponseCode !== '100'){
+        //     noOfFailedRecharges += 1
+        //   }
+        // }
         res.status(200).json(response)
         // res.status(200).render('view', {
         //   msg: `${noOfSuccessfulRecharges} were successful while ${noOfFailedRecharges} were not`})
