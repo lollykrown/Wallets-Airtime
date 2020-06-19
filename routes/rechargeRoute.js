@@ -80,7 +80,7 @@ function router() {
             res.status(200).render('response')
           }).catch(function (error) {
             debug(error);
-            res.status(200).send(`<h3>${error}</h3>`)
+            res.status(200).render('error', {err: error})
           })
       } catch (err) {
         debug(err.stack)
