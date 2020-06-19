@@ -23,9 +23,9 @@ function router() {
         debug(auth, code)
         const options = {
           method: 'post',
-          url: 'https://api.wallets.africa/bills/airtime/providers',
+          //url: 'https://api.wallets.africa/bills/airtime/providers',
           //url: 'https://api.wallets.africa/wallet/balance',
-          // 'url':'https://api.wallets.africa/bills/airtime/purchase',
+          url:'https://api.wallets.africa/bills/airtime/purchase',
           headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
@@ -44,7 +44,7 @@ function router() {
             method: 'post',
             //url: 'https://api.wallets.africa/bills/airtime/providers',
             // url: 'https://api.wallets.africa/wallet/balance',
-            url:'https://api.wallets.africa/bills/airtime/purchase',
+            //url:'https://api.wallets.africa/bills/airtime/purchase',
             headers: {
               'Content-Type': 'application/json',
               'Authorization': auth
