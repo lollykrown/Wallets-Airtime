@@ -5,7 +5,7 @@ const debug = require('debug')('app:rechargeRoute');
 
 function router() {
   rechargeRoute.route('/').post((req, res) => {
-    (async function post() {
+    (async function postCards() {
       try {
         const { public, secret, phone, network } = req.body
         debug(public, secret, phone, network)
@@ -23,8 +23,8 @@ function router() {
         debug(auth, code)
         const options = {
           method: 'post',
-          //url: 'https://api.wallets.africa/bills/airtime/providers',
-          url: 'https://api.wallets.africa/wallet/balance',
+          url: 'https://api.wallets.africa/bills/airtime/providers',
+          //url: 'https://api.wallets.africa/wallet/balance',
           // 'url':'https://api.wallets.africa/bills/airtime/purchase',
           headers: {
             'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ function router() {
         axios(options)
           .then(function (response) {
             debug(response.data);
-            res.status(200).send('<h3>Recharged successfully</h3>')
+            res.status(200).render('response')
           }).catch(function (error) {
             debug(error);
             res.status(200).send(`<h3>${error}</h3>`)

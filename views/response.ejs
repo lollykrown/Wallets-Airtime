@@ -1,24 +1,95 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-<!-- Button trigger modal -->
-<!-- mhere the success popup modal code -->
-<!-- Modal Success Popup -->
-<div class="modal fade success-popup" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-            aria-hidden="true">×</span></button>
-        <h4 class="modal-title" id="myModalLabel">Thank You !</h4>
-      </div>
-      <div class="modal-body text-center">
-        <img src="http://osmhotels.com//assets/check-true.jpg">
-        <p class="lead">Contact form successfully submitted. Thank you, We will get back to you soon!</p>
-        <a href="/" class="rd_more btn btn-default">Go to Home</a>
-      </div>
-    </div>
-  </div>
-</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge</title>
+    <style>
+      body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  background-color: #6675df;
+  padding: 40px 0;
+  margin: 0 auto 20px;
+}
+.logo {
+  width: 55px;
+  height: 53px;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+.logo-text {
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 1.8em;
+  align-self: baseline;
+}
+.section {
+  justify-content: center;
+  text-align: center;
+  margin: 0px auto 100px;
+  text-align: center;
+}
+h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  margin: 15px auto 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.button1 a {
+  color: rgba(0, 174, 255);
+  border: rgba(0, 174, 255, 0.5) 2px solid;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 20px 10px;
+}
+.button2 a {
+  background-color: #6675df;
+  color: #ffffff;
+  border: #6675df 2px solid;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 20px 10px;
+}
+.footer {
+  display: flex;
+
+  display: flex;
+  line-height: 27px;
+  color: #6675df;
+  justify-content: space-between;
+}
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="icon">
+            <img src="/images/trans.jpg" alt="">
+        </div>
+        <h3>Transaction was sucessful!</h3>
+        <div class="buttons">
+            <div class="button1">
+                <a href="/"> Go Home </a>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
