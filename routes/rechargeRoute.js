@@ -42,9 +42,9 @@ function router() {
         function recharge(phone) {
           return axios({
             method: 'post',
-            url: 'https://api.wallets.africa/bills/airtime/providers',
+            //url: 'https://api.wallets.africa/bills/airtime/providers',
             // url: 'https://api.wallets.africa/wallet/balance',
-            //url:'https://api.wallets.africa/bills/airtime/purchase',
+            url:'https://api.wallets.africa/bills/airtime/purchase',
             headers: {
               'Content-Type': 'application/json',
               'Authorization': auth
