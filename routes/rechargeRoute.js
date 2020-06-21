@@ -7,9 +7,9 @@ function router() {
   rechargeRoute.route('/').post((req, res) => {
     (async function postCards() {
       try {
-        const { public, secret, phone, network } = req.body
-        debug(public, secret, phone, network)
-        if (!public || !secret || !phone || !network) {
+        const { public, secret, phone, network, amount } = req.body
+        debug(public, secret, phone, network, amount)
+        if (!public || !secret || !phone || !network || !amount) {
           res.status(400).send({
             status: false,
             message: 'All fields are required'
@@ -33,7 +33,7 @@ function router() {
           data: JSON.stringify(
             {
               Code: code,
-              Amount: 100,
+              Amount: amount,
               PhoneNumber: phone,
               SecretKey: secretKey
             })
@@ -52,7 +52,7 @@ function router() {
             data: JSON.stringify(
               {
                 Code: code,
-                Amount: 100,
+                Amount: amount,
                 PhoneNumber: phone,
                 SecretKey: secretKey
               })
