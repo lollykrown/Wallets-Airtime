@@ -60,20 +60,6 @@ function router() {
           })
         }
 
-        // axios.all([recharge(phone), recharge('07068260000')])
-        //   .then(axios.spread(function (response, perms) {
-        //     // Both requests are now complete            
-        //     debug(response.data, perms.data.Response)
-        //     debug(response.status);
-        //     debug(response.statusText);
-        //     debug(response.headers);
-        //     debug(response.config);
-        //     res.status(200).send('<h3>Recharged successfully</h3>')
-        //   })).catch(function (error) {
-        //     debug(error);
-        //     res.status(200).send(`<h3>${error}</h3>`)
-        //   })
-
         axios(options)
           .then(function (response) {
             debug(response.data);
